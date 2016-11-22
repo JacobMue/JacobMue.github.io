@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="bgded overlay">
+            <div class="wrapper row1">
+                <header id="header" class="hoc clear">
+                    <div id="logo" class="fl_left">
+                        <h1><a href="index.html">Hardware Exhibit</a></h1>
+                    </div>
+                    <nav id="mainav" class="fl_right">
+                        <ul class="clear">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="drop" href="#">Categories</a>
+                                <ul>
+                                    <li><a href="#">Handyman</a></li>
+                                    <li><a class="drop" href="#">Household</a>
+                                        <ul>
+                                        <li><a href="#">Siding</a></li>
+                                        <li><a href="#">Soffit</a></li>
+                                        <li><a href="#">Trough and Roofings</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Decks & Railings</a></li>
+                                    <li><a href="#">Fences</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li class="active"><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+<div class="wrapper row3 clear">
+    <div class="hoc container row" style="padding-top: 10px;">
+        <p style="font-size: 21px;text-decoration: none;text-align: center;">Get in Touch</p>
+        <div class="one_third first">
+            <div id="map"></div>
+                <style>
+                  #map {
+                    height: 400px;
+                    margin-bottom: 10px;
+                  }
+                </style>
+                <script>
+                  var map;
+                  function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                      center: {lat: -1.292066, lng: 36.821946},
+                      zoom: 15
+                    });
+                  }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWK_vaRwRrp7lfREOR-WPNW03-rwU2FI&callback=initMap"
+                async defer></script>
+        </div>
+
+        <div class="one_third third">
+            <div style="text-align: center;background-color: #f2f2f2;padding: 10px;">
+                <p>Address 1</p>
+                <p><i class="fa fa-map-marker"></i> Lioni, Nairobi</p>
+                <p><i class="fa fa-location-arrow"></i> P.O BOX 158</p>
+                <p><i class="fa fa-phone"></i> +25470090942</p>
+            </div>
+            <div style="text-align: center;background-color: #f2f2f2;padding: 10px;margin-top: 10px;">
+                <p>Address 2</p>
+                <p><i class="fa fa-map-marker"></i> Lioni, Nairobi</p>
+                <p><i class="fa fa-location-arrow"></i> P.O BOX 158</p>
+                <p><i class="fa fa-phone"></i> +25470090942</p>
+            </div>
+        </div>
+
+        <div class="one_third second">
+            <form id="message">
+                <input type="text" name="sendName" placeholder="Enter your name">
+                <input type="email" name="sendEmail" placeholder="Enter your email address">
+                <input type="text" name="sendText" placeholder="Enter your Message">
+                <input type="submit" name="sendSubmit" value="Send Message" style="padding:15px;">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+
+        <div class="wrapper row4">
+            <footer id="footer" class="hoc clear">
+                <div class="one_third first">
+                <h6 class="heading">CONTACT US</h6>
+                    <ul class="nospace btmspace-30 linklist contact">
+                        <li><i class="fa fa-map-marker"></i>
+                            <address>
+                            Street Name &amp; Number, Town, Postcode/Zip
+                            </address>
+                        </li>
+                        <li><i class="fa fa-phone"></i> +254 7 12345678</li>
+                        <li><i class="fa fa-envelope-o"></i>someone@example.com</li>
+                    </ul>
+                    <ul class="faico clear">
+                        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="one_third">
+                    <h6 class="heading">SALES DAYS</h6>
+                    <ul class="nospace linklist">
+                        <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">Bolts and Nuts Showcase I</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2045-04-05">Tuesday, 9<sup>th</sup> April 2016</time>
+                            <p class="nospace">If you make your living doing freelance work, then you know how important it is to not only sell people on your talent, skills, and resume, but also on who you are.&hellip;</p>
+                        </article>
+                        </li>
+                        <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">Bolts and Nuts Showcase II</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2045-04-05">Tuesday, 9<sup>th</sup> April 2016</time>
+                            <p class="nospace">If you make your living doing freelance work, then you know how important it is to not only sell people on your talent, skills, and resume, but also on who you are.&hellip;</p>
+                        </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="one_third">
+                    <h6 class="heading">Subscribe to our newsletter</h6>
+                    <p class="nospace btmspace-30">Sign up below to get the latest from us, plus exclusive special offers, direct to your inbox!</p>
+                    <form method="post" action="#">
+                        <fieldset>
+                            <legend>Newsletter:</legend>
+                            <input class="btmspace-15" type="text" value="" placeholder="Name">
+                            <input class="btmspace-15" type="text" value="" placeholder="Email">
+                            <button type="submit" value="submit">Subscribe</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </footer>
+        </div>
+
+
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.backtotop.js"></script>
+        <script src="js/jquery.mobilemenu.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+</body>
+</html>

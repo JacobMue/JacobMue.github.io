@@ -1,0 +1,71 @@
+#organizations{
+	float: left;
+	width: 100%;
+}
+#organizationsImg{
+	float: left;
+	width: 100%;
+}
+#organizationsImg img{
+	float: left;
+	width: 25%;
+	width: 140px;
+}
+#productDisplay{
+	float: left;
+	width: 21%;
+	margin-left: 1%;
+}
+#team{}
+#teamMember1{}
+#teamMember1 img{
+	padding-top: 10px;
+	border-radius: 100%;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+}
+#teamMember1 p{
+	width: 60%;
+	float: left;
+}
+#teamMember2{}
+#teamMember2 img{
+	padding-top: 10px;
+	border-radius: 100%;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+}
+#teamMember2 p{
+	width: 60%;
+	float: left;
+}
+#message{
+	width:100%;
+
+}
+#message input{
+	padding: 15px;
+	width: 100%;
+	margin-top: 10px;
+
+}
+@media screen and (min-width: 480px){
+#organizations{
+	float: left;
+	width: 40%;
+}
+#organizationsImg{
+	float: left;
+	width: 60%;
+}
+#organizationsImg img{
+	float: left;
+	width: 25%;
+}
+}
+
+

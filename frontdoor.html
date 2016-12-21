@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <title>Contact Us</title>
+    <head>
+        <title>Windscreen | Liberty Auto Mart</title>
         <meta charset="utf-8">
+        <meta name="keywords" content="Gallery Showcase ">
+        <meta name="description" content="This is just but a pick of our products available.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-<div class="bgded overlay">
+    </head>
+
+    <body id="top">
+        <div class="bgded overlay">
             <div class="wrapper row1">
                 <header id="header" class="hoc clear">
                     <div id="logo" class="fl_left" style="margin-top: 0px;">
@@ -28,7 +31,7 @@
                                     </li>
                                     <li><a class="drop" href="#">Side Lites</a>
                                         <ul>
-                                        <li><a href="frontdoor.html">Front door glass</a></li>
+                                        <li class="active"><a href="frontdoor.html">Front door glass</a></li>
                                         <li><a href="frontvent.html">Front vent glass</a></li>
                                         <li><a href="reardoor.html">Rear door glass</a></li>
                                         <li><a href="rearquarter.html">Rear quarter glass</a></li>
@@ -39,61 +42,73 @@
                             </li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <li class="active"><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
                         </ul>
                     </nav>
                 </header>
             </div>
         </div>
-<div class="wrapper row3 clear">
-    <div class="hoc container row" style="padding-top: 10px;">
-        <p style="font-size: 21px;text-decoration: none;text-align: center;">Get in Touch</p>
-        <div class="one_third first">
-            <div id="map"></div>
-                <style>
-                  #map {
-                    height: 400px;
-                    margin-bottom: 10px;
-                  }
-                </style>
-                <script>
-                  var map;
-                  function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                      center: {lat: -1.292066, lng: 36.821946},
-                      zoom: 15
-                    });
-                  }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWK_vaRwRrp7lfREOR-WPNW03-rwU2FI&callback=initMap"
-                async defer></script>
+<style type="text/css">
+    p{
+        text-align: center;
+    }
+</style>
+        <div class="wrapper row3">
+            <main class="hoc container clear">
+                <div class="content">
+                    <div id="gallery">
+                        <figure>
+                            <header class="heading">Front Door Glass</header>
+                            <p>Waiting for images...</p>
+                                <ul class="nospace clear">
+                                    <!-- <li class="one_quarter first">
+                                    <a href="#" onmouseenter="productDescriptionOn('1')" onmouseout="productDescriptionOff('1')">
+                                    <img id="product1" src="imgs/logo.png" alt="" style="height: 200px;">
+                                    <p style="color: black;background-color: silver;margin-top:-80px;display: none " id="des1">1- The New modern windscreen.</p>
+                                    </a>
+                                    </li> -->
+                                </ul>
+                        </figure>
+                    </div>
+                    <!-- <nav class="pagination">
+                        <ul>
+                            <li><a href="#">&laquo; Previous</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><strong>&hellip;</strong></li>
+                            <li class="current"><strong>5</strong></li>
+                            <li><strong>&hellip;</strong></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">Next &raquo;</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+                <div class="clear"></div>
+            </main>
         </div>
 
-        <div class="one_third third">
-            <div style="text-align: center;background-color: #f2f2f2;padding: 10px;">
-                <p>Address 1</p>
-                <p><i class="fa fa-map-marker"></i> Lioni, Nairobi</p>
-                <p><i class="fa fa-location-arrow"></i> P.O BOX 158</p>
-                <p><i class="fa fa-phone"></i> +25470090942</p>
-            </div>
-            <div style="text-align: center;background-color: #f2f2f2;padding: 10px;margin-top: 10px;">
-                <p>Address 2</p>
-                <p><i class="fa fa-map-marker"></i> Lioni, Nairobi</p>
-                <p><i class="fa fa-location-arrow"></i> P.O BOX 158</p>
-                <p><i class="fa fa-phone"></i> +25470090942</p>
-            </div>
-        </div>
+<script type="text/javascript">
 
-        <div class="one_third second">
-            <form id="message">
-                <input type="text" name="sendName" placeholder="Enter your name">
-                <input type="email" name="sendEmail" placeholder="Enter your email address">
-                <textarea rows="8" cols="50" name="sendText" placeholder="Enter your Message" style="width: 100%;margin-top: 10px;padding:10px;"></textarea>
-                <p style="margin-top: 10px;width: 100%;color: white;background-color: #1EC626;text-align: center;padding: 10px;">Send Message</p>
-            </form>
-        </div>
-    </div>
-</div>
+
+function productDescriptionOn(value){
+    var des="des"+value;
+    var product="product"+value;
+    document.getElementById(product).style.opacity="0.2";
+    document.getElementById(des).style.display='';
+
+}
+function productDescriptionOff(value){
+    var des="des"+value;
+    var product="product"+value;
+    document.getElementById(product).style.opacity="1";
+    document.getElementById(des).style.display='none';
+
+}
+
+
+</script>
+
 <!-- footer -->
         <div class="wrapper row4">
             <footer id="footer" class="hoc clear">
@@ -157,5 +172,5 @@
         <script src="js/jquery.backtotop.js"></script>
         <script src="js/jquery.mobilemenu.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
-</body>
+    </body>
 </html>
